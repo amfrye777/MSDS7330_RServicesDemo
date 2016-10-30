@@ -1,0 +1,3 @@
+Changed database context to 'RServicesDemo'.
+Building Initial Tumor Diagnosis Model
+This Manifest Deployment script has completed.  Please check for errors.

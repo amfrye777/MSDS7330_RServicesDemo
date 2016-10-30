@@ -1,0 +1,12 @@
+USE master
+GO
+
+IF EXISTS (SELECT 1 FROM SYS.DATABASES WHERE NAME = 'RServicesDemo')
+BEGIN
+    DROP DATABASE RServicesDemo
+END
+
+
+CREATE DATABASE RServicesDemo
+
+GO

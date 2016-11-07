@@ -170,7 +170,7 @@ SELECT PredictionResult = @PredictionResult,
         <DataSourceName>Local_MSSQL2016</DataSourceName>
         <CommandText>SELECT TOP 1 SerialValue AS area_meanPlot 
 FROM dbo.RPlot
-WHERE RPlot = 'TumorStat area_mean BoxPlot';;</CommandText>
+WHERE RPlot = 'TumorStat area_mean BoxPlot';</CommandText>
       </Query>
       <Fields>
         <Field Name="area_meanPlot">
@@ -189,6 +189,216 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Fields>
         <Field Name="concave_meanPlot">
           <DataField>concave_meanPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="CompactnessMeanPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS Compactness_meanPlot 
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat Compactness_mean BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Compactness_meanPlot">
+          <DataField>Compactness_meanPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FractalDimensionMeanPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS fractal_dimension_meanPlot 
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat fractal_dimension_mean BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="fractal_dimension_meanPlot">
+          <DataField>fractal_dimension_meanPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="radius_sePlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS radius_sePlot 
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat radius_se BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="radius_sePlot">
+          <DataField>radius_sePlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="area_sePlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS area_sePlot 
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat area_se BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="area_sePlot">
+          <DataField>area_sePlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="smoothness_sePlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS smoothness_sePlot 
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat smoothness_se BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="smoothness_sePlot">
+          <DataField>smoothness_sePlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="compactness_sePlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS compactness_sePlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat compactness_se BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="compactness_sePlot">
+          <DataField>compactness_sePlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="concavity_sePlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS concavity_sePlot 
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat concavity_se BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="concavity_sePlot">
+          <DataField>concavity_sePlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="radius_worstPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS radius_worstPlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat radius_worst BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="radius_worstPlot">
+          <DataField>radius_worstPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="texture_worstPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS texture_worstPlot 
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat texture_worst BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="texture_worstPlot">
+          <DataField>texture_worstPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="area_worstPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS area_worstPlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat area_worst BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="area_worstPlot">
+          <DataField>area_worstPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="concavity_worstPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS concavity_worstPlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat concavity_worst BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="concavity_worstPlot">
+          <DataField>concavity_worstPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="concave_worstPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS concave_worstPlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat concave_worst BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="concave_worstPlot">
+          <DataField>concave_worstPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="symmetry_worstPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS symmetry_worstPlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat symmetry_worst BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="symmetry_worstPlot">
+          <DataField>symmetry_worstPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="fractal_dimension_worstPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS fractal_dimension_worstPlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat fractal_dimension_worst BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="fractal_dimension_worstPlot">
+          <DataField>fractal_dimension_worstPlot</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="radius_meanPlot">
+      <Query>
+        <DataSourceName>Local_MSSQL2016</DataSourceName>
+        <CommandText>SELECT TOP 1 SerialValue AS radius_meanPlot
+FROM dbo.RPlot
+WHERE RPlot = 'TumorStat radius_mean BoxPlot';</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="radius_meanPlot">
+          <DataField>radius_meanPlot</DataField>
           <rd:TypeName>System.Byte[]</rd:TypeName>
         </Field>
       </Fields>
@@ -303,12 +513,12 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               </RightBorder>
             </Style>
           </Line>
-          <Image Name="Area_MeanPlot">
+          <Image Name="Compactness_MeanPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!Compactness_meanPlot.Value, "CompactnessMeanPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
-            <Top>1.67583in</Top>
-            <Left>0.26215in</Left>
+            <Top>1.70361in</Top>
+            <Left>0.25693in</Left>
             <Height>2.95834in</Height>
             <Width>3.2257in</Width>
             <ZIndex>3</ZIndex>
@@ -424,9 +634,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot3">
+          <Image Name="fractal_dimension_meanPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!fractal_dimension_meanPlot.Value, "FractalDimensionMeanPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>1.67583in</Top>
             <Left>9.96007in</Left>
@@ -484,9 +694,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot4">
+          <Image Name="radius_sePlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!radius_sePlot.Value, "radius_sePlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>5.3488in</Top>
             <Left>0.26215in</Left>
@@ -494,7 +704,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>9</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!radius_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -509,13 +719,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>radius_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!radius_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -533,7 +743,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>10</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!radius_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -545,9 +755,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot5">
+          <Image Name="area_sePlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!area_sePlot.Value, "area_sePlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>5.3488in</Top>
             <Left>5.18924in</Left>
@@ -555,7 +765,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>11</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -570,13 +780,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>area_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!area_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -594,7 +804,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>12</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -606,9 +816,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot6">
+          <Image Name="smoothness_sePlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!smoothness_sePlot.Value, "smoothness_sePlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>5.3488in</Top>
             <Left>9.96007in</Left>
@@ -616,7 +826,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>13</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!smoothness_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -631,13 +841,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>smoothness_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!smoothness_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -655,7 +865,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>14</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!smoothness_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -667,9 +877,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot7">
+          <Image Name="compactness_sePlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!compactness_sePlot.Value, "compactness_sePlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>9.04325in</Top>
             <Left>0.26215in</Left>
@@ -677,7 +887,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>15</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!compactness_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -692,13 +902,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>compactness_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!compactness_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -716,7 +926,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>16</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!compactness_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -728,9 +938,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot8">
+          <Image Name="concavity_sePlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!concavity_sePlot.Value, "concavity_sePlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>9.04325in</Top>
             <Left>5.18924in</Left>
@@ -738,7 +948,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>17</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concavity_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -753,13 +963,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>concavity_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!concavity_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -777,7 +987,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>18</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concavity_se.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -789,9 +999,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot9">
+          <Image Name="radius_worstPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!radius_worstPlot.Value, "radius_worstPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>9.04325in</Top>
             <Left>9.96007in</Left>
@@ -799,7 +1009,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>19</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!radius_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -814,13 +1024,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>radius_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!radius_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -838,7 +1048,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>20</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!radius_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -850,9 +1060,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot10">
+          <Image Name="texture_worstPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!texture_worstPlot.Value, "texture_worstPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>12.72506in</Top>
             <Left>0.26215in</Left>
@@ -860,7 +1070,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>21</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!texture_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -875,13 +1085,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>texture_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!texture_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -899,7 +1109,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>22</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!texture_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -911,9 +1121,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot11">
+          <Image Name="area_worstPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!area_worstPlot.Value, "area_worstPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>12.72506in</Top>
             <Left>5.18924in</Left>
@@ -921,7 +1131,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>23</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -936,13 +1146,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>area_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!area_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -960,7 +1170,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>24</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -972,9 +1182,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot12">
+          <Image Name="concavity_worstPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!concavity_worstPlot.Value, "concavity_worstPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>12.72506in</Top>
             <Left>9.96007in</Left>
@@ -982,7 +1192,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>25</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concavity_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -997,13 +1207,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>concavity_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!concavity_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1021,7 +1231,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>26</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concavity_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1033,9 +1243,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot13">
+          <Image Name="concave_worstPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!concave_worstPlot.Value, "concave_worstPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>16.4006in</Top>
             <Left>0.25694in</Left>
@@ -1043,7 +1253,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>27</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!compactness_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concave_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1058,13 +1268,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>compactness mean: </Value>
+                    <Value>concave_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!compactness_mean.Value</Value>
+                    <Value>=Parameters!concave_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1081,7 +1291,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>28</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!compactness_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concave_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1093,9 +1303,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot14">
+          <Image Name="symmetry_worstPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!symmetry_worstPlot.Value, "symmetry_worstPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>16.4006in</Top>
             <Left>5.18403in</Left>
@@ -1103,7 +1313,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>29</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concave_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!symmetry_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1118,13 +1328,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>concave_mean: </Value>
+                    <Value>symmetry_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!concave_mean.Value</Value>
+                    <Value>=Parameters!symmetry_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1142,7 +1352,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>30</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!concave_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!symmetry_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1154,9 +1364,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot15">
+          <Image Name="fractal_dimension_worstPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!fractal_dimension_worstPlot.Value, "fractal_dimension_worstPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>16.4006in</Top>
             <Left>9.95486in</Left>
@@ -1164,7 +1374,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>31</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!fractal_dimension_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1179,13 +1389,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>fractal_dimension_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!fractal_dimension_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1203,7 +1413,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>32</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!fractal_dimension_worst.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1215,9 +1425,9 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Image Name="Area_MeanPlot16">
+          <Image Name="radius_meanPlot">
             <Source>Database</Source>
-            <Value>=First(Fields!area_meanPlot.Value, "areaMeanPlot")</Value>
+            <Value>=First(Fields!radius_meanPlot.Value, "radius_meanPlot")</Value>
             <MIMEType>image/jpeg</MIMEType>
             <Top>20.07357in</Top>
             <Left>0.25694in</Left>
@@ -1225,7 +1435,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
             <Width>3.2257in</Width>
             <ZIndex>33</ZIndex>
             <Visibility>
-              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!area_mean.Value)</Hidden>
+              <Hidden>=Microsoft.VisualBasic.Information.IsNothing(Parameters!radius_mean.Value)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1240,13 +1450,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>radius_mean: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!radius_mean.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1301,13 +1511,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>texture_mean: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!texture_mean.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1362,13 +1572,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>perimeter_mean: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!perimeter_mean.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1484,13 +1694,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>smoothness_mean: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!smoothness_mean.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1545,13 +1755,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>concavity_mean: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!concavity_mean.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1606,13 +1816,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>symmetry_mean: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!symmetry_mean.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1667,13 +1877,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>texture_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!texture_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1728,13 +1938,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>perimeter_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!perimeter_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1789,13 +1999,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>concave_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!concave_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1850,13 +2060,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>symmetry_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!symmetry_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1911,13 +2121,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>fractal_dimension_se: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!fractal_dimension_se.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1972,13 +2182,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>perimeter_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!perimeter_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -2033,13 +2243,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>smoothness_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!smoothness_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -2094,13 +2304,13 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>area_mean: </Value>
+                    <Value>compactness_worst: </Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!area_mean.Value</Value>
+                    <Value>=Parameters!compactness_worst.Value</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -2281,7 +2491,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>14</Value>
+          <Value>0.11</Value>
         </Values>
       </DefaultValue>
       <Prompt>compactness mean</Prompt>
@@ -2291,7 +2501,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>0.4</Value>
+          <Value>0.04</Value>
         </Values>
       </DefaultValue>
       <Prompt>concave mean</Prompt>
@@ -2301,7 +2511,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>20</Value>
+          <Value>0.065</Value>
         </Values>
       </DefaultValue>
       <Prompt>fractal dimension mean</Prompt>
@@ -2311,7 +2521,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>0.4</Value>
+          <Value>0.35</Value>
         </Values>
       </DefaultValue>
       <Prompt>radius se</Prompt>
@@ -2321,7 +2531,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>0.4</Value>
+          <Value>40</Value>
         </Values>
       </DefaultValue>
       <Prompt>area se</Prompt>
@@ -2331,7 +2541,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>0.5</Value>
+          <Value>0.007</Value>
         </Values>
       </DefaultValue>
       <Prompt>smoothness se</Prompt>
@@ -2341,7 +2551,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>0.6</Value>
+          <Value>0.03</Value>
         </Values>
       </DefaultValue>
       <Prompt>compactness se</Prompt>
@@ -2351,7 +2561,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>0.3</Value>
+          <Value>0.03</Value>
         </Values>
       </DefaultValue>
       <Prompt>concavity se</Prompt>
@@ -2361,7 +2571,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>12</Value>
+          <Value>17.5</Value>
         </Values>
       </DefaultValue>
       <Prompt>radius worst</Prompt>
@@ -2371,7 +2581,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>12</Value>
+          <Value>26.5</Value>
         </Values>
       </DefaultValue>
       <Prompt>texture worst</Prompt>
@@ -2381,7 +2591,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>12</Value>
+          <Value>900</Value>
         </Values>
       </DefaultValue>
       <Prompt>area worst</Prompt>
@@ -2391,7 +2601,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>12</Value>
+          <Value>0.25</Value>
         </Values>
       </DefaultValue>
       <Prompt>concavity worst</Prompt>
@@ -2401,7 +2611,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>12</Value>
+          <Value>0.06</Value>
         </Values>
       </DefaultValue>
       <Prompt>concave worst</Prompt>
@@ -2411,7 +2621,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>12</Value>
+          <Value>0.0285</Value>
         </Values>
       </DefaultValue>
       <Prompt>symmetry worst</Prompt>
@@ -2421,7 +2631,7 @@ WHERE RPlot = 'TumorStat concave_mean BoxPlot';</CommandText>
       <Nullable>true</Nullable>
       <DefaultValue>
         <Values>
-          <Value>12</Value>
+          <Value>0.088</Value>
         </Values>
       </DefaultValue>
       <Prompt>fractal dimension worst</Prompt>

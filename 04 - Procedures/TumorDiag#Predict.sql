@@ -38,31 +38,65 @@ SELECT  radius_mean             = NULL,
         perimeter_mean          = NULL,
         area_mean               = NULL,
         smoothness_mean         = NULL,
-        compactness_mean        = 14,
+        compactness_mean        = .11,
         concavity_mean          = NULL,
-        concave_mean            = 12,
+        concave_mean            = .04,
         symmetry_mean           = NULL,
-        fractal_dimension_mean  = 20,
-        radius_se               = .4,
+        fractal_dimension_mean  = .065,
+        radius_se               = .35,
         texture_se              = NULL,
         perimeter_se            = NULL,
-        area_se                 = .4,
-        smoothness_se           = .5,
-        compactness_se          = .6,
-        concavity_se            = .3,
+        area_se                 = 40,
+        smoothness_se           = .007,
+        compactness_se          = 0.03,
+        concavity_se            = .03,
         concave_se              = NULL,
         symmetry_se             = NULL,
         fractal_dimension_se    = NULL,
-        radius_worst            = 12,
-        texture_worst           = 12,
+        radius_worst            = 17.5,
+        texture_worst           = 26.5,
         perimeter_worst         = NULL,
-        area_worst              = 12,
+        area_worst              = 900,
         smoothness_worst        = NULL,
         compactness_worst       = NULL,
-        concavity_worst         = 12,
-        concave_worst           = 12,
-        symmetry_worst          = 12,
-        fractal_dimension_worst = 12
+        concavity_worst         = .25,
+        concave_worst           = .06,
+        symmetry_worst          = .0285,
+        fractal_dimension_worst = .088
+
+--SELECT  TOP 1
+--         radius_mean             = radius_mean             
+--        ,texture_mean            = texture_mean            
+--        ,perimeter_mean          = perimeter_mean          
+--        ,area_mean               = area_mean               
+--        ,smoothness_mean         = smoothness_mean         
+--        ,compactness_mean        = compactness_mean        
+--        ,concavity_mean          = concavity_mean          
+--        ,concave_mean            = concave_mean            
+--        ,symmetry_mean           = symmetry_mean           
+--        ,fractal_dimension_mean  = fractal_dimension_mean  
+--        ,radius_se               = radius_se               
+--        ,texture_se              = texture_se              
+--        ,perimeter_se            = perimeter_se            
+--        ,area_se                 = area_se                 
+--        ,smoothness_se           = smoothness_se           
+--        ,compactness_se          = compactness_se          
+--        ,concavity_se            = concavity_se            
+--        ,concave_se              = concave_se              
+--        ,symmetry_se             = symmetry_se             
+--        ,fractal_dimension_se    = fractal_dimension_se    
+--        ,radius_worst            = radius_worst            
+--        ,texture_worst           = texture_worst           
+--        ,perimeter_worst         = perimeter_worst         
+--        ,area_worst              = area_worst              
+--        ,smoothness_worst        = smoothness_worst        
+--        ,compactness_worst       = compactness_worst       
+--        ,concavity_worst         = concavity_worst         
+--        ,concave_worst           = concave_worst           
+--        ,symmetry_worst          = symmetry_worst          
+--        ,fractal_dimension_worst = fractal_dimension_worst 
+--from TumorStatistics
+--where Diagnosis = 'B'
 
 SELECT * FROM @TumorDiagPredict
 
@@ -137,8 +171,6 @@ BEGIN TRY
 		             ,@script               = N'
 
 DAModel <-unserialize(DAModelSerialized)
-
-print(DAModel)
 
 predict          <- predict(DAModel, TumorDiagPredict)
 

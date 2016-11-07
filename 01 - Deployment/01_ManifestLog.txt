@@ -1,55 +1,7 @@
 Changed database context to 'master'.
 Deploying DB
 Changed database context to 'master'.
-Deploying PreScripts
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Deploying Tables
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Deploying User Defined Table Types
-Changed database context to 'RServicesDemo'.
-Deploying Constraints
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Deploying Primary Keys
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Deploying Foreign Keys
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Deploying Post Scripts
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Deploying Procedures
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Changed database context to 'RServicesDemo'.
-Deploying Populate Scripts
-Changed database context to 'RServicesDemo'.
-
-(2 rows affected)
-
-(0 rows affected)
-
-(2 rows affected)
-Changed database context to 'RServicesDemo'.
-
-(2 rows affected)
-
-(0 rows affected)
-
-(2 rows affected)
-Changed database context to 'RServicesDemo'.
-
-(569 rows affected)
-This Manifest Deployment script has completed.  Please check for errors.
+Msg 3702, Level 16, State 4, Server DESKTOP-HP1K4G2\MSSQL2016, Line 4
+Cannot drop database "RServicesDemo" because it is currently in use.
+Msg 1801, Level 16, State 3, Server DESKTOP-HP1K4G2\MSSQL2016, Line 8
+Database 'RServicesDemo' already exists. Choose a different database name.
